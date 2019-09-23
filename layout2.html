@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Layout 2</title>
-    <style>
-    /*Grid Layout- Template Area*/
-	body {
-            margin: 0;
-            font-family: sans-serif;
-            min-height: 620px;
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Layout 2</title>
+	<style>
+		/*Grid Layout- Template Area*/
+		/*Generic Style*/
+		body {
+			margin: 0;
+			font-family: sans-serif;
+			min-height: 620px;
 			display: grid;
 			width: 960px;
 			grid-gap: 20px;
@@ -22,26 +24,36 @@
 				"head head head"
 				"sec1 sec2 sec3"
 				"sec4 sec5 sec6"
-                "sec7 sec8 sec9"
-				"foot foot foot";            
-        }
-		div, nav ul, section, footer, a {
-            background: silver;
-         }
-        a {
-            color: black;
-            text-decoration: none;
-        }
+				"sec7 sec8 sec9"
+				"foot foot foot";
+		}
+		/*Element Level Styling*/
+		div,
+		nav ul,
+		section,
+		footer,
+		a {
+			background: silver;
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
 		h1 {
-            font-size: 2.8rem;
-        }
+			font-size: 2.8rem;
+		}
+
 		div:nth-of-type(1) {
 			grid-area: logo;
 		}
+
 		nav {
 			grid-area: nav;
 			align-self: center;
 		}
+
 		nav ul {
 			list-style-type: none;
 			margin: 0;
@@ -53,37 +65,46 @@
 			justify-items: center;
 			align-content: center;
 		}
+
 		header {
 			grid-area: head;
-            background-color: white !important;
-            
+			background-color: white !important;
+
 		}
-		
+		/*Template Area definition*/
 		#sec1 {
 			grid-area: sec1;
 		}
+
 		#sec2 {
 			grid-area: sec2;
 		}
+
 		#sec3 {
 			grid-area: sec3;
 		}
+
 		#sec4 {
 			grid-area: sec4;
 		}
+
 		#sec5 {
 			grid-area: sec5;
 		}
+
 		#sec6 {
 			grid-area: sec6;
 		}
-        #sec7 {
+
+		#sec7 {
 			grid-area: sec7;
 		}
-        #sec8 {
+
+		#sec8 {
 			grid-area: sec8;
 		}
-        #sec9 {
+
+		#sec9 {
 			grid-area: sec9;
 		}
 
@@ -91,34 +112,37 @@
 			grid-area: foot;
 			text-align: center;
 		}
-    </style>
+	</style>
 </head>
+
 <body>
 	<div>Company Logo</div>
-    <nav>
-    	<ul>
-        	<li><a href="#">Item 1</a></li>
-        	<li><a href="#">Item 2</a></li>
-        	<li><a href="#">Item 3</a></li>
-        	<li><a href="#">Item 4</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro.</h1>
-        <h2>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset assentior, cu ferri aperiam imperdiet sed.</h2>
-    </header>
-    
-    <section id="sec1"></section>
-    <section id="sec2"></section>
-    <section id="sec3"></section>
-    <section id="sec4"></section>
-    <section id="sec5"></section>
-    <section id="sec6"></section>
-    <section id="sec7"></section>
-    <section id="sec8"></section>
-    <section id="sec9"></section>
-    <footer>
-        <p>Copyright Notice</p>
-    </footer>
+	<nav>
+		<ul>
+			<li><a href="#">Item 1</a></li>
+			<li><a href="#">Item 2</a></li>
+			<li><a href="#">Item 3</a></li>
+			<li><a href="#">Item 4</a></li>
+		</ul>
+	</nav>
+	<header>
+		<h1>Lorem ipsum dolor sit amet, ne saepe phaedrum cotidieque has, natum zril pro.</h1>
+		<h2>Cu vel aliquid lobortis deseruisse. Nam at adipisci dignissim forensibus. Qui an recteque maluisset
+			assentior, cu ferri aperiam imperdiet sed.</h2>
+	</header>
+
+	<section id="sec1"></section>
+	<section id="sec2"></section>
+	<section id="sec3"></section>
+	<section id="sec4"></section>
+	<section id="sec5"></section>
+	<section id="sec6"></section>
+	<section id="sec7"></section>
+	<section id="sec8"></section>
+	<section id="sec9"></section>
+	<footer>
+		<p>Copyright Notice</p>
+	</footer>
 </body>
+
 </html>
